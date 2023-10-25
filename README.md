@@ -12,6 +12,6 @@ em navegadores de smartphones e tablets o relacionados com o zoom atrapalhando a
 e isso não é o objetivo da aplicação!!! navegadores expansivos trazem melhor conforto ao usuário...
 uma experiência nesse jogo pode ser obtida no link:
 
-...Link..
+https://rafael-silva-natal.github.io/FisicaMemGame_vers-o1/
 
 ...por hora é isso... R.Silva
