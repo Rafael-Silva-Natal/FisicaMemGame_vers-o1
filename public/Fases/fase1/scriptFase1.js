@@ -232,5 +232,9 @@ function redirecionar1() {
 }
 function redirecionar2() {
   console.log("redirecionar2: Navigating to estudar.html");
-  window.location.href = "../Estudar.html";
+  window.location.href = "index.html";/*função modificada!!! Página fora do ar*/
 }
+/* segue abaixo o código original da fução acima modificada*/
+/* window.location.href = "../Estudar.html"; */
+
+
