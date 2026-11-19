@@ -1,23 +1,23 @@
 const images = [
-    { id: 1, type: "pergunta", src: "./images4/pergunta1.png", matched: false },
-    { id: 2, type: "pergunta", src: "./images4/pergunta2.png", matched: false },
-    { id: 3, type: "pergunta", src: "./images4/pergunta3.png", matched: false },
-    { id: 4, type: "pergunta", src: "./images4/pergunta4.png", matched: false },
+    { id: 1, type: "pergunta", src: "./images1/pergunta1.png", matched: false },
+    { id: 2, type: "pergunta", src: "./images1/pergunta2.png", matched: false },
+    { id: 3, type: "pergunta", src: "./images1/pergunta3.png", matched: false },
+    { id: 4, type: "pergunta", src: "./images1/pergunta4.png", matched: false },
 
-    { id: 5, type: "resposta", src: "./images4/resposta1.png", questionId: 1, matched: false },
-    { id: 6, type: "resposta", src: "./images4/resposta2.png", questionId: 2, matched: false },
-    { id: 7, type: "resposta", src: "./images4/resposta3.png", questionId: 3, matched: false },
-    { id: 8, type: "resposta", src: "./images4/resposta4.png", questionId: 4, matched: false },
+    { id: 5, type: "resposta", src: "./images1/resposta1.png", questionId: 1, matched: false },
+    { id: 6, type: "resposta", src: "./images1/resposta2.png", questionId: 2, matched: false },
+    { id: 7, type: "resposta", src: "./images1/resposta3.png", questionId: 3, matched: false },
+    { id: 8, type: "resposta", src: "./images1/resposta4.png", questionId: 4, matched: false },
 
-    { id: 9, type: "pergunta", src: "./images4/pergunta5.png", matched: false },
-    { id: 10, type: "pergunta", src: "./images4/pergunta6.png", matched: false },
-    { id: 11, type: "pergunta", src: "./images4/pergunta7.png", matched: false },
-    { id: 12, type: "pergunta", src: "./images4/pergunta8.png", matched: false },
+    { id: 9, type: "pergunta", src: "./images1/pergunta5.png", matched: false },
+    { id: 10, type: "pergunta", src: "./images1/pergunta6.png", matched: false },
+    { id: 11, type: "pergunta", src: "./images1/pergunta7.png", matched: false },
+    { id: 12, type: "pergunta", src: "./images1/pergunta8.png", matched: false },
     
-    { id: 13, type: "resposta", src: "./images4/resposta5.png", questionId: 9, matched: false },
-    { id: 14, type: "resposta", src: "./images4/resposta6.png", questionId: 10, matched: false },
-    { id: 15, type: "resposta", src: "./images4/resposta7.png", questionId: 11, matched: false },
-    { id: 16, type: "resposta", src: "./images4/resposta8.png", questionId: 12, matched: false }
+    { id: 13, type: "resposta", src: "./images1/resposta5.png", questionId: 9, matched: false },
+    { id: 14, type: "resposta", src: "./images1/resposta6.png", questionId: 10, matched: false },
+    { id: 15, type: "resposta", src: "./images1/resposta7.png", questionId: 11, matched: false },
+    { id: 16, type: "resposta", src: "./images1/resposta8.png", questionId: 12, matched: false }
   ];
 
 
@@ -90,16 +90,22 @@ function checkCards() {
 
     if (matchedPairsCount === images.length / 2) {
       alert("Parabéns! Você encontrou todos os pares!");
-      //document.getElementById("restartButton").style.display = "block";
-      //o comando para recarregar a página
-      window.location.reload();
+      //document.getElementById("restartButton").style.display = "block";// parte do código removido em teste
+
+
+      // tentaviva de atualização automática para sanar a falha
+        // Adicione o comando para recarregar a página
+        window.location.reload();
 
     }
+
+
+    
   } else {
     // Cartas não correspondem
     setTimeout(() => {
-      card1.style.backgroundImage = `url(./images4/verso.png)`;
-      card2.style.backgroundImage = `url(./images4/verso.png)`;
+      card1.style.backgroundImage = `url(./images1/verso.png)`;
+      card2.style.backgroundImage = `url(./images1/verso.png)`;
       flippedCards = [];
       document.getElementById("checkButton").setAttribute("disabled", "true");
     }, 1000);
@@ -161,18 +167,16 @@ function checkCards() {
   
   const checkButton = document.getElementById("checkButton");
   checkButton.addEventListener("click", checkCards);
-  
 
 
- // Função para lidar com o clique no botão
- function redirecionar3() {
-  // Altere o URL abaixo para a página desejada
-  window.location.href = "../fase4/PaginaFinal.html";
-}
+     // Função para redirecionar a pagina
+     function redirecionar1() {
+      // Altere o URL abaixo para a página desejada
+      window.location.href = "../fase2/fase2.html";
+  }
 
-// Obtém o elemento do botão por seu ID
-var botao = document.getElementById("meuBotao3");
+  // Obtém o elemento do botão por seu ID
+  var botao = document.getElementById("meuBotao1");
 
-// Adiciona um ouvinte de evento ao botão
-botao.addEventListener("click", redirecionar3);
-  
+  // Adiciona um ouvinte de evento ao botão
+  botao.addEventListener("click", redirecionar1);
